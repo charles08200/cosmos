@@ -1,0 +1,15 @@
+syntax = "proto3";
+package cosmos.cosmos;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/charles08200/cosmos/x/cosmos/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "cosmos/x/cosmos/Params";
+  option (gogoproto.equal) = true;
+
+  
+}
